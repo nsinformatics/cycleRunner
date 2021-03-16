@@ -40,7 +40,7 @@ function setup(){
   
 createCanvas(windowWidth,windowHeight);
 // Moving background
-path=createSprite(500,300);
+path=createSprite(500,250);
 path.addImage(pathImg);
 path.velocityX = -10;
 
@@ -136,7 +136,7 @@ function draw() {
   
     textSize(20);
     fill(255);
-    text("Press Up Arrow to Restart the game!", 500,200);
+    text("Press Up Arrow to Restart the game!", 300,300);
   
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
