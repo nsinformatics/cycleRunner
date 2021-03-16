@@ -52,7 +52,7 @@ mainCyclist.scale=0.1;
 //set collider for mainCyclist
 mainCyclist.setCollider("rectangle",0,0,40,40);
   
-gameOver = createSprite(150,300);
+gameOver = createSprite(50,300);
 gameOver.addImage(gameOverImg);
 gameOver.scale = 0.8;
 gameOver.visible = false;  
@@ -136,7 +136,7 @@ function draw() {
   
     textSize(20);
     fill(255);
-    text("Press Up Arrow to Restart the game!", 150,300);
+    text("Press Up Arrow to Restart the game!", 200,300);
   
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
