@@ -40,13 +40,13 @@ function setup(){
   
 createCanvas(windowWidth,windowHeight);
 // Moving background
-path=createSprite(500,250);
+path=createSprite(500,200);
 path.addImage(pathImg);
 path.velocityX = -10;
 
 //creating boy running
 mainCyclist  = createSprite(70,150);
-mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
+mainCyclist.addAnimation("Running",mainRacerImg1);
 mainCyclist.scale=0.1;
   
 //set collider for mainCyclist
@@ -136,7 +136,7 @@ function draw() {
   
     textSize(20);
     fill(255);
-    text("Press Up Arrow to Restart the game!", 300,300);
+    text("Press Up Arrow to Restart the game!", 150,300);
   
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
